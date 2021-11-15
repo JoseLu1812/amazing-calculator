@@ -4,26 +4,31 @@ public class IncredibleCalculator {
 
     public static void main(String[] args) {
 
-        System.out.println("Selecciona la operación que prefieras realizar: ");
+        int suma=0, total=0;
+
+        System.out.println("Selecciona la operaciï¿½n que prefieras realizar: ");
         System.out.println("1. Sumar");
         System.out.println("2. Restar");
         System.out.println("3. Multiplicar");
-        System.out.println("4. Dividir (división entera)");
-        System.out.println("5. Dividir (división con decimales)");
+        System.out.println("4. Dividir (divisiï¿½n entera)");
+        System.out.println("5. Dividir (divisiï¿½n con decimales)");
 
         int opcion = leerEnteroEntrada();
 
 
         switch (opcion) {
-            case 1: //Sumar. Debes leer dos numeros enteros de entrada e imprimir su suma
+            case 1: 
+                    suma = LeerEnteroEntrada();
+                    total= total + suma;
+                    System.out.println("Resultado de las suma= "+total".")
                     break;
-            case 2: // Restar. Debes leer dos números enteros de entrada e imprimir su resta
+            case 2: // Restar. Debes leer dos nï¿½meros enteros de entrada e imprimir su resta
                     break;
-            case 3: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su producto.
+            case 3: // Multiplicar. Debes leer dos nï¿½meros enteros de entrada e imprimir su producto.
                     break;
-            case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división entera.
+            case 4: // Multiplicar. Debes leer dos nï¿½meros enteros de entrada e imprimir su divisiï¿½n entera.
                     break;
-            case 5: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división con decimales.
+            case 5: // Multiplicar. Debes leer dos nï¿½meros enteros de entrada e imprimir su divisiï¿½n con decimales.
                     break;
 
         }
@@ -57,7 +62,7 @@ public class IncredibleCalculator {
             sc.close();
             return result;
         } catch (NumberFormatException ex) {
-            System.err.println("Lo que has introducido no es un número entero!");
+            System.err.println("Lo que has introducido no es un nï¿½mero entero!");
             System.exit(1);
             return -1;
         }
