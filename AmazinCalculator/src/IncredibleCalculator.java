@@ -4,7 +4,7 @@ public class IncredibleCalculator {
 
     public static void main(String[] args) {
 
-        int suma=0, total=0;
+        int suma=0, total=0, resta1=0, resta2=0;
 
         System.out.println("Selecciona la operaci�n que prefieras realizar: ");
         System.out.println("1. Sumar");
@@ -22,7 +22,10 @@ public class IncredibleCalculator {
                     total= total + suma;
                     System.out.println("Resultado de las suma= "+total".")
                     break;
-            case 2: // Restar. Debes leer dos n�meros enteros de entrada e imprimir su resta
+            case 2: resta1 = LeerEnteroEntrada();
+                    resta2 = leerEnteroEntrada();
+                    total= rest1 - resta2;
+                    System.out.println("Resultado de las suma= "+total".")
                     break;
             case 3: // Multiplicar. Debes leer dos n�meros enteros de entrada e imprimir su producto.
                     break;
