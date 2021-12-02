@@ -4,7 +4,7 @@ public class IncredibleCalculator {
 
     public static void main(String[] args) {
 
-        int suma=0, total=0, resta1=0, resta2=0, mult1=0;
+        int suma=0, total=0, resta1=0, resta2=0;
 
         System.out.println("Selecciona la operaci�n que prefieras realizar: ");
         System.out.println("1. Sumar");
@@ -31,6 +31,12 @@ public class IncredibleCalculator {
 
             case 3: mult1=2;
                     mult2=3;
+                     int[] arr = new int [] {123,456,789};
+
+
+                for(int a: arr){
+                    System.out.println(a);
+                }
                     break;
             case 4: // Multiplicar. Debes leer dos n�meros enteros de entrada e imprimir su divisi�n entera.
                     break;
