@@ -27,7 +27,12 @@ public class IncredibleCalculator {
                     total= rest1 - resta2;
                     System.out.println("Resultado de las suma= "+total".")
                     break;
-            case 3: // Multiplicar. Debes leer dos n�meros enteros de entrada e imprimir su producto.
+            case 3: int[] arr = new int [] {123,456,789};
+
+
+                for(int a: arr){
+                    System.out.println(a);
+                }
                     break;
             case 4: // Multiplicar. Debes leer dos n�meros enteros de entrada e imprimir su divisi�n entera.
                     break;
